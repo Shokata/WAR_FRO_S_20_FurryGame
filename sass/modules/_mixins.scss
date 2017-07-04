@@ -1,0 +1,38 @@
+@mixin clearfix() {
+  &:after,
+  &:before {
+    clear: both;
+    display: table;
+    content: "";
+  }
+}
+@mixin test($test) {
+   @content;
+  //content - nietypowa własość która nie jest zadeklarowana w mixin
+  color: $test;
+}
+@mixin border($border) {
+  border: 1px solid $border;
+}
+@mixin float($float) {
+  float: $float;
+}
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin borderFrame($color) {
+  border-top: 1px solid $color;
+  border-right: 1px solid lighten($color, 20%);
+  border-left: 2px dashed darken($color, 20%);
+  border-bottom: 0;
+  border-radius: 5px;
+}
+
+@mixin margin($size) {
+  margin: $size;
+}
+@mixin padding($size) {
+  padding: $size;
+}

@@ -1,0 +1,57 @@
+@import 'vendor/bootstrap/bootstrap';
+
+.bg {
+  background: lightgrey;
+}
+.container-fluid {
+  background: lightgrey;
+  width: 992px;
+  height: 1500px;
+}
+.navbar {
+  flex-direction: row;
+}
+.navbar-form {
+  display: flex;
+}
+.nav {
+  justify-content: space-between;
+}
+.zygzak {
+  background-image: url(../images/zygzak.png);
+  height: 8px;
+}
+.blue {
+  background: rgb(91,192,222);
+  height: 15px;
+  width: 100%;
+}
+div .col-md-12 {
+  padding: 0;
+  overflow: hidden;
+}
+.main-foto {
+  background-image: url(../images/main.png);
+  width: 100%;
+  height: 450px;
+
+}
+.mid-content {
+  height: 400px;
+  width: 100%;
+}
+.relative {
+  position: relative;
+  display: flex;
+}
+.sprawdz {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 20%;
+  background: rgb(91,192,222);
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  width: 393px;
+  height: 250px;
+}
